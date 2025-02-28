@@ -1,0 +1,16 @@
+ <section id="destinations">
+        <h2>Featured Destinations</h2>
+    </section>
+    <section id="destinations">
+        <div class="destination">
+            <img src="./image.jpg" alt="Beach">
+            <h3>Tropical Paradise</h3>
+        </div>
+        <div class="destination">
+            <img src="./image.jpg" alt="Mountains">
+            <h3>Mountain Retreat</h3>
+        </div>
+    </section>
+
+
+    

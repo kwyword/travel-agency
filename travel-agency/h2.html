@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .hero {
+            background: url('https://source.unsplash.com/1600x800/?travel,nature') no-repeat center center/cover;
+            color: white;
+            padding: 150px 20px;
+        }
+        #destinations, #services {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .destination, .service {
+            max-width: 300px;
+            text-align: center;
+        }
+        .destination img, .service img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        #about {
+            padding: 20px;
+            background: #f4f4f4;
+        }
+        #about img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+        #testimonials {
+            padding: 20px;
+            background: #eaeaea;
+        }
+        .testimonial {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 10px;
+            border-left: 5px solid #333;
+            font-style: italic;
+        }
+        #contact {
+            padding: 20px;
+            background: #f4f4f4;
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 10px;
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #333;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: none;
+        }
+        .back-to-top:hover {
+            background: #555;
+        }
+        @media (max-width: 768px) {
+            #destinations, #services {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+    <script>
+        window.addEventListener('scroll', function() {
+            const button = document.getElementById('backToTop');
+            if (window.scrollY > 300) {
+                button.style.display = 'block';
+            } else {
+                button.style.display = 'none';
+            }
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Explore The World</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="hero">
+        <h2>Your Adventure Starts Here</h2>
+        <p>Discover amazing places with us!</p>
+    </section>
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <img src="https://via.placeholder.com/600" alt="About Us">
+        <p>We are a travel agency committed to making your dream vacations a reality. With years of experience and a passion for adventure, we ensure every trip is unforgettable.</p>
+    </section>
+    
+    <section id="destinations">
+        <h2>Featured Destinations</h2>
+        <div class="destination">
+            <img src="https://via.placeholder.com/300" alt="Beach">
+            <h3>Tropical Paradise</h3>
+        </div>
+        <div class="destination">
+            <img src="https://via.placeholder.com/300" alt="Mountains">
+            <h3>Mountain Retreat</h3>
+        </div>
+    </section>
+    
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <img src="https://via.placeholder.com/300" alt="Flight Booking">
+            <h3>Flight Booking</h3>
+            <p>We provide the best deals on flights to your favorite destinations.</p>
+        </div>
+        <div class="service">
+            <img src="https://via.placeholder.com/300" alt="Hotel Reservations">
+            <h3>Hotel Reservations</h3>
+            <p>Book luxurious and budget-friendly hotels with ease.</p>
+        </div>
+        <div class="service">
+            <img src="https://via.placeholder.com/300" alt="Tour Packages">
+            <h3>Tour Packages</h3>
+            <p>Choose from a variety of tour packages designed for ultimate experiences.</p>
+        </div>
+    </section>
+    
+    <section id="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial">
+            <p>"The best travel experience! Everything was perfectly organized and I had the time of my life."</p>
+            <strong>- Alex Johnson</strong>
+        </div>
+        <div class="testimonial">
+            <p>"Amazing destinations and wonderful service. Highly recommend!"</p>
+            <strong>- Sarah Lee</strong>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@travelagency.com</p>
+        <p>Phone: +123 456 789</p>
+    </section>
+    
+    <a href="#home" id="backToTop" class="back-to-top">Back to Top</a>
+    
+    <footer>
+        <p>&copy; 2025 Travel Agency. All rights reserved.</p>
+    </footer>
+</body>
+</html>
